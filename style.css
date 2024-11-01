@@ -1,0 +1,27 @@
+body{
+    background: black;
+}
+.game{
+
+}
+.count{
+    color: white;
+    font-size: 45px;
+    font-family: Arial Black;
+}
+.button_div{
+
+}
+.button{
+    width: 50%;
+    height: 50%;
+
+    border-radius: 360px;
+    border: 0px;
+}
+.img{
+    width: 100%;
+    vertical-align: middle;
+
+    border-radius: 360px;
+}
