@@ -11,7 +11,7 @@ MainButton.show();
 BackButton.show();
 
 MainButton.onClick(function() {
-  WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
+  WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
 });
 WebApp.onEvent('mainButtonClicked', function() {
   /* also */
