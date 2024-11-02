@@ -29,6 +29,7 @@ WebApp.onEvent('backButtonClicked', function() {
 WebApp.expand();
 
 function click_count(){
+    WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
     count++;
     text = "" + count;
     txt.innerText = text;
