@@ -1,4 +1,4 @@
-var count = 0;
+let count = 0;
 const txt = document.getElementById("count_text");
 
 var WebApp = window.Telegram.WebApp;
@@ -14,7 +14,10 @@ BackButton.show();
 WebApp.MainButton.text = "Save and Exit";
 
 MainButton.onClick(function() {
-  WebApp.sendData(count);
+  let data = {
+    clicks: count
+  }
+  WebApp.sendData(JSON.stringify(data));
   WebApp.close();
 });
 WebApp.onEvent('mainButtonClicked', function() {
